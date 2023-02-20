@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sports Registration Form</title>
+	<style>
+
+		body {
+			background-color: #333;
+			color: #fff;
+			font-family: Arial, sans-serif;
+		}
+        h1 {
+            color:  #FFD700;
+            font-size: 50px;
+            text-align: center;
+            }
+		form {
+            background-color: #444;
+            padding: 122px;
+            margin: 20px auto;
+            max-width: 717px;
+            border-radius: 5px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input, select {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 20px;
+		}
+		textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			height: 100px;
+			margin-bottom: 20px;
+		}
+		input[type="submit"] {
+            background-color: blue;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: larger;
+		}
+		input[type="submit"]:hover {
+			background-color: #ff5555;
+
+		}
+        .alert{
+            width: 100%;
+            background: rgb(0, 255, 106);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 900;
+            display: none;
+}
+	</style>
+</head>
+<body>
+	<form id="contactForm">
+		<h1>Sports Registration Form</h1>
+        <div class="alert">Your Message Sent</div>
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" required>
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" required>
+		<label for="regno">Registration No</label>
+		<input type="text" id="regno" name="regno" required>
+		<label for="contact">Contact No</label>
+		<input type="tel" id="contact" name="contact" required>
+		<label for="sports">Interested Sports</label>
+		<select id="sports" name="sports" required>
+			<option value="">Select</option>
+			<option value="Basketball">Basketball</option>
+			<option value="Football">Football</option>
+			<option value="Cricket">Cricket</option>
+			<option value="Badminton">Badminton</option>
+			<option value="Volleyball">Volleyball</option>
+			<option value="Boxing">Boxing</option>
+		</select>
+		<label for="about">Tell me about yourself</label>
+		<textarea id="about" name="about"></textarea>
+		<input type="submit" value="Submit">
+	</form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
